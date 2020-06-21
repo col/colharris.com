@@ -1,0 +1,12 @@
+general:
+  name: General
+  description: False
+  cover: False
+elixir:
+  name: Elixir
+  description: False
+  cover: False
+tips:
+  name: Tips
+  description: False
+  cover: False

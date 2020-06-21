@@ -1,0 +1,11 @@
+col:
+  username: col
+  name: Colin Harris
+  location: Singapore
+  url_full: False
+  url: False
+  bio: Starter of side projects, finisher of none.
+  picture: assets/images/profile.jpg
+  facebook: False
+  twitter: col_harris
+  cover: False

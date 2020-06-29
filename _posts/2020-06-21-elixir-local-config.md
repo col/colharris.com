@@ -5,7 +5,9 @@ navigation: True
 cover:  assets/images/posts/elixir-local-config.jpg
 title: Elixir local development config
 date: 2020-06-21 11:30:00
-tags: [Tips, Elixir]
+tags: 
+  - Tips
+  - Elixir
 class: post-template
 subclass: 'post'
 author: col

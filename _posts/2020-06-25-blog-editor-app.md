@@ -5,7 +5,10 @@ navigation: true
 cover: assets/images/posts/blog-editor-app.jpg
 title: "Project Idea: Blog Editor App"
 date: 2020-06-23 17:30:00
-tags: [WWDC20 SwiftUI BlogEditor]
+tags: 
+  - WWDC20
+  - SwiftUI
+  - BlogEditor
 class: post-template
 subclass: 'post'
 author: col

@@ -15,7 +15,7 @@ subclass: 'post'
 author: col
 ---
 
-I've realised that in order for the Blog Editor to be useful I need to streamline the publishing process. Due to some 
+I've realised that in order for the [Blog Editor](./blog-editor-app) to be useful I need to streamline the publishing process. Due to some 
 plugins I'm using I need to run the build locally then manually push the generated static files to `gh-pages` 
 branch. 
 
@@ -42,16 +42,9 @@ jobs:
       - uses: actions/checkout@v2
       - uses: helaili/jekyll-action@2.0.3
         env:
-          JEKYLL_PAT: ${{ secrets.JEKYLL_PAT }}
+          JEKYLL_PAT: ${ { secrets.JEKYLL_PAT }}
 ```
 
+Now all I need to do is push changes to the markdown files and it'll all get deployed automatically. 
 
-Unfortunately, the action does not trigger when I push changes. 🤔 
-      
-**Update:** Turns out it's a bad time to be trying GitHub Actions for the first time. The service is currently down. 🤦‍♂️ 
-
-![GitHub Actions Incident](assets/images/posts/jekyll-action-outage.png)
-
-**Update 2:** The service is back up! The build action now gets triggered as expected and working perfectly. 
-
-![GitHub Actions Success](assets/images/posts/jekyll-action-success.png)
+My next problem is, how do I make a git commit from an iOS app? 🤔 

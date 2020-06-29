@@ -2,16 +2,14 @@
 layout: post
 current: post
 navigation: true
-cover: assets/images/posts/jekyll-action.jpg
+cover: assets/images/posts/jekyll-action.png
 title: "Jekyll Github Action"
-date: 2020-06-29 18:15:00
+date: 2020-06-28 18:15:00
 tags: [Jekyll GitHub BlogEditor]
 class: post-template
 subclass: 'post'
 author: col
 ---
-
-# Blog Editor - Jekyll Action
 
 I've realised that in order for the Blog Editor to be useful I need to streamline the publishing process. This first 
 step towards this was to setup a GitHub Action to build the site for each commit and push the changes to the `gh-pages` 
@@ -24,4 +22,6 @@ that also removes the `CNAME` config file I need in order to use a custom domain
 Long story short, I've forked the jekyll action [here](https://github.com/col/jekyll-action) and it should now only push
 the changes without using force push. 
       
-  
+**Update:** Turns out it's a bad time to be trying to implement my first GitHub Action.️ 
+
+![GitHub Actions Incident](assets/images/posts/jekyll-action-outage.png)

@@ -11,8 +11,6 @@ subclass: 'post'
 author: col
 ---
 
-# Project Idea: Blog Editor App
-
 While setting up this blog last week I started looking around for a Markdown app I could use to manage the content. I've
 been using [Notable](https://notable.app/) for awhile now to keep my own notes but due to some issues, such as the one I 
 [raised here](https://github.com/notable/notable/issues/1192), it doesn't work well for Jekyll content.

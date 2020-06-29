@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<feed xmlns="http://www.w3.org/2005/Atom" >
+  <generator uri="https://jekyllrb.com/" version="3.7.4">Jekyll</generator>
+  <link href="/tag/wwdc20/feed.xml" rel="self" type="application/atom+xml" />
+  <link href="/" rel="alternate" type="text/html" />
+  <updated>2020-06-29T14:18:01+00:00</updated>
+  <id>/tag/wwdc20/feed.xml</id>
+
+  
+  
+  
+
+  
+    <title type="html">colharris.com | </title>
+  
+
+  
+    <subtitle>Programming blog</subtitle>
+  
+
+  
+
+  
+    
+      
+    
+  
+
+  
+  
+
+  
+    <entry>
+      <title type="html">Project Idea: Blog Editor App</title>
+      <link href="/blog-editor-app" rel="alternate" type="text/html" title="Project Idea: Blog Editor App" />
+      <published>2020-06-23T17:30:00+00:00</published>
+      <updated>2020-06-23T17:30:00+00:00</updated>
+      <id>/blog-editor-app</id>
+      <content type="html" xml:base="/blog-editor-app">&lt;p&gt;While setting up this blog last week I started looking around for a Markdown app I could use to manage the content. I’ve
+been using &lt;a href=&quot;https://notable.app/&quot;&gt;Notable&lt;/a&gt; for awhile now to keep my own notes but due to some issues, such as the one I 
+&lt;a href=&quot;https://github.com/notable/notable/issues/1192&quot;&gt;raised here&lt;/a&gt;, it doesn’t work well for Jekyll content.&lt;/p&gt;
+
+&lt;p&gt;I’ll be watching a few of the WWDC20 videos this week and, as a way to try out whatever I learn, I like to come up a 
+relatively simple app idea I can work along the way. For WWDC18 I ended up creating a Harry Potter style 
+Augmented Reality photo wall app to try out the ARKit framework. I’ll post about that another day.&lt;/p&gt;
+
+&lt;p&gt;So for this year, I think I’ll try to create a simple, cross platform, Jekyll content editor using SwiftUI.&lt;/p&gt;
+
+&lt;p&gt;Here’s some high level requirements for what I’m thinking.&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Simple split view style layout with a list of posts in the sidebar&lt;/li&gt;
+  &lt;li&gt;Clicking a post when open a plain text editor on the right to edit markdown&lt;/li&gt;
+  &lt;li&gt;A preview button that will switch the text editor to a HTML view that renders the markdown&lt;/li&gt;
+  &lt;li&gt;Ability to save changes and somehow sync with other devices&lt;/li&gt;
+  &lt;li&gt;Support Jekyll metadata in the markdown content
+    &lt;ul&gt;
+      &lt;li&gt;Strip it out before displaying the content in the editor&lt;/li&gt;
+      &lt;li&gt;Provide the ability to edit the metadata in a popup window&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Target platforms would be iPad and MacOS&lt;/li&gt;
+  &lt;li&gt;Try to stick pure SwiftUI as much as possible&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;At this point this feels mostly achievable. Bring on WWDC20!&lt;/p&gt;</content>
+
+      
+      
+      
+      
+      
+
+      <author>
+          <name>Colin Harris</name>
+        
+        
+      </author>
+
+      
+
+      
+        <category term="WWDC20" />
+      
+        <category term="SwiftUI" />
+      
+        <category term="BlogEditor" />
+      
+
+      
+        <summary type="html">While setting up this blog last week I started looking around for a Markdown app I could use to manage the content. I’ve been using Notable for awhile now to keep my own notes but due to some issues, such as the one I raised here, it doesn’t work well for Jekyll content.</summary>
+      
+
+      
+      
+    </entry>
+  
+</feed>

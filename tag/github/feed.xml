@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<feed xmlns="http://www.w3.org/2005/Atom" >
+  <generator uri="https://jekyllrb.com/" version="3.7.4">Jekyll</generator>
+  <link href="/tag/github/feed.xml" rel="self" type="application/atom+xml" />
+  <link href="/" rel="alternate" type="text/html" />
+  <updated>2020-06-29T14:18:01+00:00</updated>
+  <id>/tag/github/feed.xml</id>
+
+  
+  
+  
+
+  
+    <title type="html">colharris.com | </title>
+  
+
+  
+    <subtitle>Programming blog</subtitle>
+  
+
+  
+
+  
+    
+      
+    
+  
+
+  
+  
+
+  
+    <entry>
+      <title type="html">Jekyll Github Action</title>
+      <link href="/jekyll-action" rel="alternate" type="text/html" title="Jekyll Github Action" />
+      <published>2020-06-28T18:15:00+00:00</published>
+      <updated>2020-06-28T18:15:00+00:00</updated>
+      <id>/jekyll-action</id>
+      <content type="html" xml:base="/jekyll-action">&lt;p&gt;I’ve realised that in order for the &lt;a href=&quot;./blog-editor-app&quot;&gt;Blog Editor&lt;/a&gt; to be useful I need to streamline the publishing process. Due to some 
+plugins I’m using I need to run the build locally then manually push the generated static files to &lt;code class=&quot;highlighter-rouge&quot;&gt;gh-pages&lt;/code&gt; 
+branch.&lt;/p&gt;
+
+&lt;p&gt;GitHub provides a lightweight CI system called GitHub Actions that should be able to run the build for each 
+commit to master and push the static files to the &lt;code class=&quot;highlighter-rouge&quot;&gt;gh-pages&lt;/code&gt; branch automatically. Surprisingly I have not tried GitHub 
+Actions yet so this is a good opportunity to try them out.&lt;/p&gt;
+
+&lt;p&gt;I found this existing custom Jekyll Action &lt;a href=&quot;https://github.com/helaili/jekyll-action&quot;&gt;here&lt;/a&gt; that would do the job.&lt;/p&gt;
+
+&lt;p&gt;It’s very simple to implement, just add the following config to &lt;code class=&quot;highlighter-rouge&quot;&gt;.github/workflows/github-pages.yml&lt;/code&gt;.&lt;/p&gt;
+
+&lt;div class=&quot;language-yaml highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;na&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;Build and deploy Jekyll site to GitHub Pages&lt;/span&gt;
+
+&lt;span class=&quot;na&quot;&gt;on&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt;
+  &lt;span class=&quot;na&quot;&gt;push&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt;
+    &lt;span class=&quot;na&quot;&gt;branches&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt;
+      &lt;span class=&quot;pi&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;master&lt;/span&gt;
+
+&lt;span class=&quot;na&quot;&gt;jobs&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt;
+  &lt;span class=&quot;na&quot;&gt;github-pages&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt;
+    &lt;span class=&quot;na&quot;&gt;runs-on&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;ubuntu-16.04&lt;/span&gt;
+    &lt;span class=&quot;na&quot;&gt;steps&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt;
+      &lt;span class=&quot;pi&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;uses&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;actions/checkout@v2&lt;/span&gt;
+      &lt;span class=&quot;pi&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;uses&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;helaili/jekyll-action@2.0.3&lt;/span&gt;
+        &lt;span class=&quot;na&quot;&gt;env&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt;
+          &lt;span class=&quot;na&quot;&gt;JEKYLL_PAT&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;${ { secrets.JEKYLL_PAT }}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Now all I need to do is push changes to the markdown files and it’ll all get deployed automatically.&lt;/p&gt;
+
+&lt;p&gt;My next problem is, how do I make a git commit from an iOS app? 🤔&lt;/p&gt;</content>
+
+      
+      
+      
+      
+      
+
+      <author>
+          <name>Colin Harris</name>
+        
+        
+      </author>
+
+      
+
+      
+        <category term="Tip" />
+      
+        <category term="Jekyll" />
+      
+        <category term="GitHub" />
+      
+        <category term="BlogEditor" />
+      
+
+      
+        <summary type="html">I’ve realised that in order for the Blog Editor to be useful I need to streamline the publishing process. Due to some plugins I’m using I need to run the build locally then manually push the generated static files to gh-pages branch.</summary>
+      
+
+      
+      
+    </entry>
+  
+</feed>

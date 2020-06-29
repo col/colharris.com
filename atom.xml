@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title> - Articles</title>
+    <description>Programming blog</description>
+    <link>
+    </link>
+    
+      
+      <item>
+        <title>Jekyll Github Action</title>
+        
+          <description>&lt;p&gt;I’ve realised that in order for the &lt;a href=&quot;./blog-editor-app&quot;&gt;Blog Editor&lt;/a&gt; to be useful I need to streamline the publishing process. Due to some 
+plugins I’m using I need to run the build locally then manually push the generated static files to &lt;code class=&quot;highlighter-rouge&quot;&gt;gh-pages&lt;/code&gt; 
+branch.&lt;/p&gt;
+
+</description>
+        
+        <pubDate>Sun, 28 Jun 2020 18:15:00 +0000</pubDate>
+        <link>
+        /jekyll-action</link>
+        <guid isPermaLink="true">/jekyll-action</guid>
+      </item>
+      
+    
+      
+      <item>
+        <title>Project Idea: Blog Editor App</title>
+        
+          <description>&lt;p&gt;While setting up this blog last week I started looking around for a Markdown app I could use to manage the content. I’ve
+been using &lt;a href=&quot;https://notable.app/&quot;&gt;Notable&lt;/a&gt; for awhile now to keep my own notes but due to some issues, such as the one I 
+&lt;a href=&quot;https://github.com/notable/notable/issues/1192&quot;&gt;raised here&lt;/a&gt;, it doesn’t work well for Jekyll content.&lt;/p&gt;
+
+</description>
+        
+        <pubDate>Tue, 23 Jun 2020 17:30:00 +0000</pubDate>
+        <link>
+        /blog-editor-app</link>
+        <guid isPermaLink="true">/blog-editor-app</guid>
+      </item>
+      
+    
+      
+      <item>
+        <title>Elixir local development config</title>
+        
+          <description>&lt;p&gt;When you’re working in a team it’s common for each developers setup to be a little different. A great way to deal with this in Elixir projects is to include an optional config file called &lt;code class=&quot;highlighter-rouge&quot;&gt;local.exs&lt;/code&gt;. This file should not be tracked in source control and can override any config each developer needs for their local machine.&lt;/p&gt;
+
+</description>
+        
+        <pubDate>Sun, 21 Jun 2020 11:30:00 +0000</pubDate>
+        <link>
+        /elixir-local-config</link>
+        <guid isPermaLink="true">/elixir-local-config</guid>
+      </item>
+      
+    
+      
+      <item>
+        <title>Why?</title>
+        
+          <description>&lt;p&gt;So why am I creating this blog?&lt;/p&gt;
+
+</description>
+        
+        <pubDate>Sat, 20 Jun 2020 11:30:00 +0000</pubDate>
+        <link>
+        /why</link>
+        <guid isPermaLink="true">/why</guid>
+      </item>
+      
+    
+  </channel>
+</rss>
